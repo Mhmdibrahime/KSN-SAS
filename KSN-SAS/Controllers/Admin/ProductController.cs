@@ -7,5 +7,11 @@ namespace KSN_SAS.Controllers.Admin
     [ApiController]
     public class ProductController : ControllerBase
     {
+
+        [HttpGet("GetAll")]
+        public IActionResult GetProducts()
+        {
+            return Ok(new { ProductId = 1 });   
+        }
     }
 }
