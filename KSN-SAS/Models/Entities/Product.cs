@@ -28,7 +28,7 @@ namespace KSN_SAS.Models.Entities
 
         [Required, MaxLength(50)]
         public string? Status { get; set; } 
-
+        public DateTime CteationDate { get; set; } = DateTime.Now;
         public int CategoryId { get; set; }
         public Category? Category { get; set; }
 

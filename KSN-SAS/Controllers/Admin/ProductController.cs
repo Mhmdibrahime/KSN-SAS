@@ -110,6 +110,7 @@ namespace KSN_SAS.Controllers.Admin
                 Quantity = model.Quantity,
                 Discount = model.Discount,
                 Status = model.Status,
+                CteationDate = DateTime.Now,
                 CategoryId = model.CategoryId,
                 Images = new List<Image>()
             };
