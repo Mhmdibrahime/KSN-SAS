@@ -11,6 +11,7 @@ namespace KSN_SAS.Models.Entities
         [Required]
         public string Url { get; set; }
 
+        public bool IsPrimary { get; set; }
 
         public int ProductId { get; set; }
         public Product? Product { get; set; }
