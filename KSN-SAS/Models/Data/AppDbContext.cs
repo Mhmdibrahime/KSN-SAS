@@ -15,5 +15,7 @@ namespace KSN_SAS.Models.Data
         public DbSet<Image> Images { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Feedback> Feedbacks { get; set; }
+        public DbSet<Message> Messages { get; set; }
+
     }
 }

@@ -9,9 +9,11 @@ using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 using KSN_SAS.Models.DTOs.FeedbackAdminDTOs;
 using KSN_SAS.Models.Data;
+using Microsoft.AspNetCore.Authorization;
 
 namespace KSN_SAS.Controllers.Admin
 {
+    [Authorize]
     [Route("Admin/[controller]")]
     [ApiController]
     public class FeedbackController : ControllerBase

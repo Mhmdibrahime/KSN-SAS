@@ -10,9 +10,11 @@ using System.Threading.Tasks;
 using System.Linq;
 using KSN_SAS.Models.DTOs.ProductAdminDTOs;
 using KSN_SAS.Models.Data;
+using Microsoft.AspNetCore.Authorization;
 
 namespace KSN_SAS.Controllers.Admin
 {
+    [Authorize]
     [Route("Admin/[controller]")]
     [ApiController]
     public class ProductController : ControllerBase
